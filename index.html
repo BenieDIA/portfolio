@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Benito Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,22 +16,19 @@
             </div>
             <div class="links">
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skills.html">Skills</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="experiences.html">experiences</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="projets.html">Projets</a></div>
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Me contacter</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="mailto:oyoukoub@gmail.com">Me contacter</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
                 <a href="index.html">Home</a>
-                <a href="">About</a>
                 <a href="skills.html">Skills</a>
                 <a href="experiences.html">experiences</a>
                 <a href="projets.html">Projets</a>
-                <a href="">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
@@ -41,8 +39,11 @@
                     <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Bonjour je m'appelle <span>Benie</span></h1>
                     <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">Je suis un <span></span></div>
                     <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Bienvenue sur mon portfolio, découvrez mon parcours et mes compétences sur ce site web</p>
-
-
+                    <div id="pop-up" class="hidden">
+                        <div id="github-data">
+                            <script src="js/github.js"></script>
+                        </div>
+                    </div>
                     <p><script src="js/github.js"></script></p>
                     <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
                         <a href="#" ><i class="fa-brands fa-github"></i></a>
@@ -51,11 +52,15 @@
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
                     <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                        
-                        <button>Télécharger CV</button>
+                        <a href="../img/Cv Benie alternance .pdf" download><button>Télécharger CV</button></a>
                     </div>
                 </div>
             </div>
+            <script src="../js/script.js"></script>
+            <script src="../js/script3.js">
+            </script>
+            <script src="../js/script2.js">
+            </script>
         </section>
 </body>
 </html>
