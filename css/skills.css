@@ -228,14 +228,25 @@ padding: 20px;
 
 @keyframes words {
     0%, 33%{
-        content: "Développeur";
+        content: "HTML";
     }
     34%, 66%{
-        content: "Etudiant";
+        content: "CSS";
     }
     67%, 100%{
-        content: "Créateur";
+        content: "PHP";
     }
+    67%, 100%{
+        content: "JAVA";
+    }
+    67%, 100%{
+        content: "MYSQL";
+    }
+    67%, 100%{
+        content: "JavaScript";
+    }
+    
+
 }
 
 .content p{
