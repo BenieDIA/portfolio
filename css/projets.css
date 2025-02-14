@@ -27,8 +27,6 @@
 .gallery-item {
     border: 0.2rem solid rgb(255, 255, 255);
     border-radius: 8px;
-    
-    overflow: hidden;
     text-align: center;
     padding: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;

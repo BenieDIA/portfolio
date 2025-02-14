@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Benito Portfolio</title>
+    <link rel="stylesheet" href="css/java.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Benito</span> 
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">experiences</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Projets</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Me contacter</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="skills.html">Skills</a>
+                <a href="experiences.html">experiences</a>
+                <a href="projets.html">Projets</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section class="jcontainer">
+            
+                <h1>Présentation du projet E5</h1>
+                <h1>Description des Fonctionnalités et Caractéristiques de l'Application</h1>
+<h2>Caractéristiques Générales :</h2>
+<p><strong>Interface en Ligne de Commande :</strong> L'application est actuellement accessible uniquement via une interface en ligne de commande.</p>
+<p><strong>Architecture 3-Tiers :</strong> Conçue selon une architecture 3-tiers, l'application doit conserver cette structure applicative.</p>
+<p><strong>Multi-Utilisateurs :</strong> L'application doit être adaptée pour supporter plusieurs utilisateurs grâce à l'intégration d'une base de données.</p>
+
+<h2>Niveaux d'Habilitation des Utilisateurs :</h2>
+<p><strong>Employé de Ligue :</strong></p>
+<ul>
+    <li><strong>Consultation :</strong> Peut ouvrir l'application et l'utiliser comme un annuaire.</li>
+    <li><strong>Restrictions :</strong> Ne dispose d'aucun droit d'écriture.</li>
+</ul>
+
+<p><strong>Administrateur de Ligue :</strong></p>
+<ul>
+    <li><strong>Gestion des Employés :</strong> Dispose de droits d'écriture et peut gérer la liste des employés de sa propre ligue.</li>
+    <li><strong>Interface :</strong> Utilise une application de bureau pour effectuer ces tâches.</li>
+</ul>
+
+<p><strong>Super-Administrateur :</strong></p>
+<ul>
+    <li><strong>Accès Global :</strong> A accès en écriture à tous les employés des ligues.</li>
+    <li><strong>Gestion des Comptes :</strong> Peut gérer les comptes des administrateurs des ligues.</li>
+    <li><strong>Interface :</strong> Utilise une application accessible en ligne de commande.</li>
+</ul>
+
+<h2>Fonctionnalités Rajoutée :</h2>
+<p><strong>Saisie de date d'inscription d'employés en ligne de commande :</strong> Chaque administrateur de ligue doit pouvoir recenser les employés de sa ligue.</p>
+<p><strong>Mise en Place des Niveaux d'Habilitation :</strong> Il existe trois niveau d'Habilitation, le Super- administrateur qui accès a tous les droit, l'administrateur de ligue qui peut gérer sa ligue et l'employé qui a juste un droit de lecture sur l'application.</p>
+<p><strong>Mise en place de la selection d'employés</strong></p>
+<p><strong>Mise en place de la selection d'employés</strong></p>
+                <div class="container">
+                    <div class="image-container">
+                        <img src="../img/MCD.png" alt="Image1">
+                        <div class="description">Cette image représente une structure de base de données ou MCD relationnelle avec deux entités principales : "Employé" et "Ligue".
+                            Relation : Un employé peut appartenir à un ou plusieurs ligues (relation 0,N avec l'entité "Ligue").</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="image-container">
+                        <img src="../img/arbre.png" alt="Image1">
+                        <div class="description">
+                        <p>Cette image représente l'arbre heureustique du projet</p>
+                        <p>les différentes fonctionnalitées ainsi que l'arborescence y sont représentée</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="image-container">
+                        <img src="../img/console.png" alt="Image1">
+                        <div class="description">Cette image représente l'affichage en ligne de commande des différentes fonctionnalitées de l'application</div>
+                    </div>
+                </div>
+                <div><a href="https://github.com/BenieDIA/personnel"><button>lien code source</button></a></div>
+            
+        </section>        
+        <script src="js/script.js"></script>
+        <script src="js/script3.js">
+        </script>
+        <script src="js/script2.js">
+            
+        </script>
+        <script src="js/click.js"></script>
+</body>
+<footer> 
+
+
+
+</footer>
+</html>
