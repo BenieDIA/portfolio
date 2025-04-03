@@ -4,47 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Benito Portfolio</title>
+    <title>Benito - Skills</title>
     <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav>
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <span>Benito</span> 
+                <span>Benito</span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skills.html">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="experiences.html">experiences</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="projets.html">Projets</a></div>
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="mailto:oyoukoub@gmail.com">Me contacter</a></div>
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="skills.html">Skills</a></div>
+                <div class="link"><a href="experiences.html">Experiences</a></div>
+                <div class="link"><a href="projets.html">Projets</a></div>
+                <div class="link contact-btn"><a href="mailto:oyoukoub@gmail.com">Me contacter</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="index.html">Home</a>
-                <a href="skills.html">Skills</a>
-                <a href="experiences.html">experiences</a>
-                <a href="projets.html">Projets</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+    </nav>
+    
+    <section class="skills">
+        <h1 data-aos="fade-up">Mes Compétences</h1>
+        <div class="skills-container">
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="img/html.png" alt="HTML">
+                <h3>HTML</h3>
+                <p>Langage de balisage pour structurer les pages web.</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="img/css.png" alt="CSS">
+                <h3>CSS</h3>
+                <p>Feuilles de style pour le design et la mise en page.</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
+                <img src="img/javascript.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Langage de programmation pour l'interactivité des sites.</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="img/php.png" alt="PHP">
+                <h3>PHP</h3>
+                <p>Langage serveur pour les applications web dynamiques.</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="img/php.png" alt="PHP">
+                <h3>Java</h3>
+                <p>Langage serveur pour les applications web dynamiques.</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="img/php.png" alt="PHP">
+                <h3>Mysql</h3>
+                <p>Langage serveur pour les applications web dynamiques.</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="img/php.png" alt="PHP">
+                <h3>Laravel</h3>
+                <p>Langage serveur pour les applications web dynamiques.</p>
+            </div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+                <img src="img/php.png" alt="PHP">
+                <h3>RestAPI</h3>
+                <p>Langage serveur pour les applications web dynamiques.</p>
             </div>
         </div>
-    </nav>
-        <section>
-            <div class="main-container">
-                <div class="content">
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Bienvenue sur ma page <span>Skills</span></h1>
-                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">J'utilise <span></span></div>
-                </div>
-            </div>
-            <script src="js/script.js"></script>
-            <script src="js/script3.js">
-            </script>
-            <script src="js/script2.js">
-            </script>
-        </section>
+    </section>
+    
+    <script src="js/script.js"></script>
+    <script src="js/script3.js"></script>
+    <script src="js/script2.js"></script>
 </body>
 </html>
