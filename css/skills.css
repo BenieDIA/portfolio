@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
+@import url(./style.css);
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body {
-    width: 100%;
-    min-height: 100vh;
-    background: url(../img/background.jpg) no-repeat center center/cover;
-    overflow-x: hidden;
-}
+
 nav{
     width: 100%;
     height: 10vh;

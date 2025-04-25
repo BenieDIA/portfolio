@@ -1,0 +1,50 @@
+@import url(./style.css);
+.experience-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+}
+
+.experience-title {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px white;
+}
+
+.experience-container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.experience-subtitle {
+    font-size: 2rem;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.experience-card {
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    scale: 1.02;
+}
