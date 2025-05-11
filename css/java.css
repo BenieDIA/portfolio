@@ -1,69 +1,141 @@
 @import url(./style.css);
+
+/* ====== Structure générale ====== */
 .jcontainer {
     margin: 0;
-    padding: 0;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
 }
+
+/* ====== Titres ====== */
+h1, h2 {
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 10px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
 h1 {
-    color: #ffff;
-    text-align: center;
-    padding: 20px;
-}
-h2{
-    color: #ffff;
-    text-align: center;
-    padding: 20px;
-}
-li{
-    color: #ffff;
-    text-align: left;
-    padding: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+}
 
-p{
-    color: #ffff;
+/* ====== Paragraphes et listes ====== */
+p, li {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+p {
     text-align: justify;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
 }
+
+li {
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
 
 .container {
-    color: #ffff;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-}
-.image-container {
-    margin: 20px;
-    display: flex;
-    align-items: center; /* Ajout pour aligner verticalement */
-  
-}
-img {
-    border-radius: 5%;
-    max-width: 1000px;
-    height: auto;
-    margin-right: 20px; /* Ajout pour espacer l'image et la description */
-}
-button{
-    width: 40%;
-    height: 6vh;
-    margin: 30px;
-    background-color: rgba(251, 251, 251, 0);
-    color: rgb(255, 255, 255);
-    border: 2px solid rgb(230, 230, 230);
-    outline: none;
-    font-size: 100%;
-    font-weight: 700;
-    border-radius: 50px;
-    transition: 0.2s linear;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
 }
 
-button:hover{
- scale: 1.1;
- color: rgb(255, 255, 255);
- border: 2px solid rgb(230, 230, 230);
- background-color: transparent;
- font-weight: 700;
- box-shadow: 0 0 40px rgb(255, 255, 255);
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.image-container:hover {
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+img:hover {
+    transform: scale(1.03);
+}
+.description {
+    color: white;
+    text-align: justify;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+}
+
+
+button {
+    width: 250px;
+    height: 45px;
+    margin: 30px auto;
+    display: block;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, li {
+        font-size: 0.95rem;
+        padding: 5px 15px;
+    }
+
+    .image-container {
+        padding: 10px;
+    }
+
+    button {
+        width: 80%;
+        font-size: 0.9rem;
+    }
 }
