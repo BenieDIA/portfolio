@@ -1,13 +1,12 @@
 @import url(./style.css);
 
-/* Réinitialisation de certains styles par défaut */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Style général de la galerie */
 .projets {
     font-family: Arial, sans-serif;
     display: flex;
@@ -23,7 +22,6 @@
     width: 100%;
 }
 
-/* Style des éléments de la galerie */
 .gallery-item {
     border: 0.2rem solid rgb(255, 255, 255);
     border-radius: 8px;
@@ -32,13 +30,13 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Effet au survol des images */
+
 .gallery-item:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgb(255, 255, 255);
 }
 
-/* Style des images */
+
 .gallery-item img {
     width: 100%;
     height: auto;
@@ -47,7 +45,6 @@
     object-fit: cover;
 }
 
-/* Titre et description */
 .gallery-item h3 {
     font-size: 1.2rem;
     margin: 10px 0;

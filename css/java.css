@@ -9,7 +9,10 @@
     align-items: center;
     background: transparent;
 }
+body{
+    background: url(../img/background.jpg) no-repeat center center / cover fixed;
 
+}
 /* ====== Titres ====== */
 h1, h2 {
     color: #ffffff;
